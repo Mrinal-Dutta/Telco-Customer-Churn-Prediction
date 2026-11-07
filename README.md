@@ -83,3 +83,39 @@ Telco-Customer-Churn-Prediction/
 This project demonstrates how Machine Learning can be used to predict customer churn and support data-driven customer retention strategies.
 
 The final model achieved a ROC-AUC score of 0.842 on the test dataset.
+## Model Performance Comparison
+
+Four classification models were evaluated using the test dataset.
+
+| Model | Accuracy | Churn Recall | ROC-AUC |
+|---|---:|---:|---:|
+| Logistic Regression | 0.7991 | 0.5187 | 0.8424 |
+| Balanced Logistic Regression | 0.7324 | 0.7914 | 0.8422 |
+| Decision Tree | 0.7282 | 0.4813 | 0.6498 |
+| Random Forest | 0.7651 | 0.6310 | 0.8244 |
+
+## Final Model Selection
+
+Balanced Logistic Regression was selected as the preferred model because it achieved the highest churn recall of 79.14%.
+
+- Correctly identified 296 out of 374 actual churn customers.
+- Achieved a ROC-AUC score of 0.8422.
+- Helps identify more potential churn customers.
+
+The model has lower accuracy than standard Logistic Regression and produces more false positives. The final choice should consider the business cost of these errors.
+
+## Key Business Insights
+
+- Month-to-month contract customers show a higher churn rate.
+- Customers with shorter tenure are more likely to churn.
+- Electronic check users have a higher churn rate.
+- Fiber optic customers show relatively higher churn.
+- Customers without online security and tech support show higher churn.
+
+## Business Recommendations
+
+- Encourage customers to choose long-term contracts.
+- Offer special retention plans to new customers.
+- Improve fiber optic service quality.
+- Promote automatic payment methods.
+- Encourage customers to use online security and technical support services.
